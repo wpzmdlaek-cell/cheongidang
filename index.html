@@ -49,9 +49,10 @@ img{max-width:100%}
 .brand{display:flex;align-items:baseline;gap:7px}
 .brand-han{font-family:var(--serif);font-size:17px;letter-spacing:.16em;color:var(--gold-2)}
 .brand-ko{font-size:10px;letter-spacing:.28em;color:var(--muted-2)}
-.nav{display:flex;gap:16px}
-.nav a{font-size:12px;letter-spacing:.06em;color:var(--muted);padding:4px 0;border-bottom:1px solid transparent;transition:.2s}
+.nav{display:flex;gap:12px}
+.nav a{font-size:12px;letter-spacing:.06em;color:var(--muted);padding:4px 0;border-bottom:1px solid transparent;transition:.2s;white-space:nowrap}
 .nav a:active{color:var(--gold-2)}
+.nav a.nav-new{color:var(--gold-2);font-weight:600}
 
 /* ---------- hero ---------- */
 .hero{position:relative;z-index:1;text-align:center;padding:52px 0 58px}
@@ -345,6 +346,68 @@ footer{border-top:1px solid rgba(212,175,55,.14);padding:34px 0 40px;background:
 .receipt{font-size:10.5px;color:var(--muted-2);line-height:1.9;margin-top:12px;border-top:1px dashed rgba(212,175,55,.16);padding-top:10px}
 .receipt b{color:var(--muted);font-weight:500}
 
+/* ---------- 세운 · 올해와 내년 ---------- */
+.ny-promo{margin-top:14px;border:1px solid rgba(212,175,55,.26);border-radius:16px;padding:15px 16px;background:linear-gradient(140deg,rgba(212,175,55,.12),rgba(255,255,255,.02) 62%)}
+.ny-promo-h{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:15.5px;color:var(--gold-3);margin-bottom:7px}
+.ny-promo-h span{font-size:9px;letter-spacing:.14em;color:#20190c;background:var(--gold-2);border-radius:4px;padding:2px 6px;font-family:var(--sans);font-weight:700}
+.ny-promo p{font-size:12px;color:var(--muted);line-height:1.75}
+.ny-promo-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.ny-promo-tags span{font-size:10px;color:var(--gold-2);border:1px solid rgba(212,175,55,.28);border-radius:99px;padding:2px 8px}
+
+.ny-band{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding:13px 14px;border-radius:16px;border:1px solid rgba(212,175,55,.42);background:linear-gradient(120deg,rgba(212,175,55,.22),rgba(84,64,132,.18));box-shadow:0 6px 22px rgba(212,175,55,.08)}
+.ny-band-txt{flex:1;min-width:0}
+.ny-band-k{display:block;font-size:9px;letter-spacing:.16em;color:var(--gold-2);margin-bottom:3px}
+.ny-band-txt strong{display:block;font-family:var(--serif);font-size:14.5px;color:#fff8e2;letter-spacing:-.02em;line-height:1.4}
+.ny-band-s{display:block;font-size:10.5px;color:var(--muted);margin-top:2px}
+.ny-band-btn{flex:0 0 auto;border:none;border-radius:10px;padding:9px 13px;font-size:12.5px;font-weight:700;color:#1b1408;background:linear-gradient(135deg,#f0dda4,#d4af37 55%,#b28c25);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ny-band-btn:active{transform:translateY(1px)}
+
+.year-box{margin-top:12px}
+.year-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ytab{position:relative;text-align:left;padding:11px 34px 11px 11px;border-radius:13px;border:1px solid rgba(212,175,55,.2);background:rgba(255,255,255,.03);cursor:pointer;transition:.18s;line-height:1.35;-webkit-tap-highlight-color:transparent}
+.ytab.on{border-color:var(--gold);background:linear-gradient(160deg,rgba(212,175,55,.2),rgba(212,175,55,.05));box-shadow:inset 0 0 16px rgba(212,175,55,.14)}
+.yt-y{font-family:var(--serif);font-size:17px;color:var(--gold-2);letter-spacing:.02em;display:block}
+.ytab.on .yt-y{color:#fff8e2}
+.yt-h{display:block;font-size:10.5px;color:var(--muted);margin-top:1px}
+.yt-k{display:block;font-size:9.5px;color:var(--muted-2);margin-top:4px;letter-spacing:-.01em;line-height:1.45}
+.yt-g{position:absolute;top:9px;right:9px;font-size:9px;padding:1px 5px;border-radius:99px;letter-spacing:.04em;line-height:1.5}
+.yt-new{position:absolute;bottom:8px;right:9px;font-size:8.5px;letter-spacing:.06em;color:#20190c;background:var(--gold-2);border-radius:3px;padding:1px 4px;font-weight:700}
+.g-da{background:var(--gold-2);color:#20190c;font-weight:700}
+.g-gil{background:rgba(212,175,55,.2);color:var(--gold-3);border:1px solid rgba(212,175,55,.45)}
+.g-mu{background:rgba(245,239,230,.08);color:var(--muted);border:1px solid rgba(245,239,230,.16)}
+.g-ju{background:rgba(201,106,82,.18);color:#e3a08f;border:1px solid rgba(201,106,82,.4)}
+
+.year-pane{margin-top:14px}
+.yp-head{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;border-bottom:1px solid rgba(212,175,55,.16);padding-bottom:10px}
+.yp-ywrap{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.yp-year{font-family:var(--serif);font-size:25px;color:#fff8e2;line-height:1;letter-spacing:.01em}
+.yp-gz{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.yp-grade{font-size:10.5px;padding:2px 9px;border-radius:99px;letter-spacing:.08em;flex:0 0 auto;margin-bottom:2px}
+.yp-term{font-size:10.5px;color:var(--muted-2);margin:8px 0 10px;letter-spacing:.01em;line-height:1.6}
+.yp-term b{color:var(--gold-2);font-weight:600}
+.yp-kw{display:inline-block;font-family:var(--serif);font-size:13.5px;color:var(--gold-3);border-left:2px solid rgba(212,175,55,.5);padding:1px 0 1px 10px;margin-bottom:4px}
+.yp-sec{margin-top:15px}
+.yp-h{font-size:10px;letter-spacing:.22em;color:var(--gold);margin-bottom:6px;display:flex;align-items:center;gap:7px}
+.yp-h::before{content:"";width:12px;height:1px;background:var(--gold);opacity:.6}
+.year-pane p,.year-pane .yp-sec p{font-size:13px;color:rgba(245,239,230,.8);line-height:1.85;margin-bottom:7px}
+.year-pane p:last-child{margin-bottom:0}
+.year-pane p b{color:var(--gold-2);font-weight:600}
+.yp-tip{border:1px solid rgba(212,175,55,.3);border-radius:12px;padding:12px 13px;background:linear-gradient(150deg,rgba(212,175,55,.11),rgba(255,255,255,.02));font-size:13px;color:var(--gold-3);line-height:1.7;margin-top:15px}
+.yp-tip span{display:block;font-size:9px;letter-spacing:.2em;color:var(--gold);margin-bottom:4px;font-family:var(--sans)}
+.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.q-cell{border:1px solid var(--line);border-radius:12px;padding:10px 11px;background:rgba(255,255,255,.025)}
+.q-cell.good{border-color:rgba(212,175,55,.4);background:linear-gradient(160deg,rgba(212,175,55,.1),rgba(255,255,255,.015))}
+.q-cell.care{border-color:rgba(201,106,82,.3);background:rgba(201,106,82,.06)}
+.q-top{display:flex;justify-content:space-between;align-items:center;gap:4px;margin-bottom:4px}
+.q-name{font-size:11px;color:var(--cream);letter-spacing:.02em;font-weight:600;flex:1;min-width:0}
+.q-badge{font-size:8.5px;padding:1px 5px;border-radius:99px;flex:0 0 auto;line-height:1.5}
+.q-span{font-size:9px;color:var(--muted-2);letter-spacing:.01em;margin-bottom:5px}
+.q-months{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:6px}
+.q-m{font-family:var(--serif);font-size:9.5px;color:var(--muted);border:1px solid rgba(212,175,55,.16);border-radius:4px;padding:1px 3px;line-height:1.4;white-space:nowrap}
+.q-m.good{border-color:rgba(212,175,55,.45);color:var(--gold-3)}
+.q-m.care{border-color:rgba(201,106,82,.4);color:#e3a08f}
+.q-line{font-size:10.5px;color:var(--muted);line-height:1.65}
+
 /* ---------- toast ---------- */
 .toast{
   position:fixed;left:50%;bottom:28px;transform:translate(-50%,10px);z-index:80;
@@ -382,6 +445,7 @@ footer{border-top:1px solid rgba(212,175,55,.14);padding:34px 0 40px;background:
     <a class="brand" href="#top"><span class="brand-han">天機堂</span><span class="brand-ko">천기당</span></a>
     <nav class="nav">
       <a href="#saju">명식</a>
+      <a href="#saju" class="nav-new" id="navNew">신년운세</a>
       <a href="#tarot">타로</a>
       <a href="#premium">프리미엄</a>
     </nav>
@@ -394,8 +458,8 @@ footer{border-top:1px solid rgba(212,175,55,.14);padding:34px 0 40px;background:
     <div class="seal">命</div>
     <p class="eyebrow">命理 · Tarot · 天機</p>
     <h1>운명의 장막 너머,<br><em>당신의 명식</em>이 깨어납니다</h1>
-    <p class="hero-sub">입춘과 24절기의 이치 위에 세운 정밀 만세력으로 태어난 여덟 글자를 세우고, 올해의 흐름과 세 장의 카드로 지금의 자리를 짚어 드립니다.</p>
-    <div class="hero-meta">입춘·24절기 기준 만세력 · 22장 메이저 아르카나</div>
+    <p class="hero-sub">입춘과 24절기의 이치 위에 세운 정밀 만세력으로 태어난 여덟 글자를 세우고, 올해의 흐름과 내년 신년운세, 세 장의 카드로 지금의 자리를 짚어 드립니다.</p>
+    <div class="hero-meta">입춘·24절기 기준 만세력 · 2026 병오년 · 2027 정미년 세운 · 22장 아르카나</div>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#saju">무료 명식 보기</a>
       <a class="btn btn-ghost" href="#tarot">타로 3장 뽑기</a>
@@ -448,6 +512,12 @@ footer{border-top:1px solid rgba(212,175,55,.14);padding:34px 0 40px;background:
       <button class="btn btn-primary btn-block" type="submit" id="submitBtn">명식 풀기</button>
       <p class="form-note">양력 기준입니다. 23시 이후 출생은 다음 날 일주로 계산합니다(조자시설).<br>시간을 모르면 세 기둥으로 풀어 드립니다.</p>
     </form>
+
+    <div class="ny-promo">
+      <div class="ny-promo-h"><span>2027</span>정미년 신년운세</div>
+      <p>명식을 풀면 올해(2026 병오년)와 내년(2027 정미년)의 흐름을 탭으로 나란히 봅니다. 丁火와 未土가 내 일간과 만나 이루는 십신으로 총운·재물·관계를 다시 계산하고, 분기별로 언제 밀고 언제 거둘지까지 짚어 드립니다.</p>
+      <div class="ny-promo-tags"><span>십신별 총운</span><span>재물·사업운</span><span>관계·건강운</span><span>분기별 흐름</span></div>
+    </div>
   </div>
 </section>
 
@@ -508,6 +578,7 @@ footer{border-top:1px solid rgba(212,175,55,.14);padding:34px 0 40px;background:
       <p class="demo-line">본 페이지는 상효 님 사업 테스트용 데모 프로토타입입니다.</p>
       <p>이 서비스는 오락과 자기 성찰을 위한 콘텐츠이며, 의료·법률·금융 투자 판단의 근거로 사용할 수 없습니다.</p>
       <p>명식 계산: 입춘·24절기(KST) 기준 연주·월주, JDN 연속 계산 일주, 오호둔·오서둔 시간. 23시 이후 출생은 다음 날 일주(조자시설)로 계산합니다.</p>
+      <p>세운 계산: 2026 병오년·2027 정미년의 천간을 일간과 대조해 십신을, 천간·지지 오행을 용신·희신·신강·신약에 대조해 길흉을 매깁니다. 분기별 흐름은 그 해 열두 달건과 용신을 대조해 계산합니다.</p>
     </div>
     <p class="foot-meta">© 2026 天機堂 DEMO · 단일 파일 프로토타입 (외부 연결 없는 오프라인 동작)</p>
   </div>
@@ -1056,7 +1127,7 @@ var HOURS = [
 
 var state = {
   gender: 'm', hourIdx: 12, jaLate: false,
-  saju: null, analysis: null,
+  saju: null, analysis: null, yearTab: null,
   theme: 'money', picked: [],
   purchased: {}, product: null, payStep: 'preview', payMethod: 'card'
 };
@@ -1230,12 +1301,13 @@ function renderResult(){
     + '<div class="meter-scale"><span>신약</span><span>중화</span><span>신강</span></div>'
     + '</div>';
 
-  var html = '<div class="res-summary">' + chips + '</div>'
+  var html = nyBandHTML(s, a)
+    + '<div class="res-summary">' + chips + '</div>'
     + pillars
     + '<div class="card" style="margin-top:14px"><div class="ohaeng-title"><span>五元素 · 오행 분포</span><span>' + (s.unknown ? '여섯 글자' : '여덟 글자') + ' 기준</span></div>'
     + bars + meter + '</div>'
     + '<div class="read-block">' + blockGijil(s, a, nick) + '</div>'
-    + '<div class="read-block">' + blockYear(s, a, nick) + '</div>'
+    + '<div class="read-block">' + blockYears(s, a, nick) + '</div>'
     + '<div class="read-block">' + blockYongsin(s, a, nick) + '</div>'
     + '<div class="read-block">' + blockLack(s, a, nick) + '</div>'
     + '<div class="result-actions">'
@@ -1245,6 +1317,7 @@ function renderResult(){
 
   el('resBody').innerHTML = html;
   el('resBody').classList.add('fade-in');
+  bindYearTabs();
 
   var fills = el('resBody').querySelectorAll('.fill');
   setTimeout(function(){
@@ -1280,22 +1353,340 @@ var JIJI_NOTE = [
   '지혜와 저장의 기운입니다. 모아 둔 사람과 정보가 때가 되어 쓰입니다.'
 ];
 
-function blockYear(s, a, nick){
-  var seun = currentSeun();
-  var ss = sipsinOf(s.dGan, seun.gan);
-  var seunName = seun.year + '년 ' + GAN_H[seun.gan] + ZHI_H[seun.zhi] + '(' + GAN_K[seun.gan] + ZHI_K[seun.zhi] + ')';
-  var ze = GAN_E[seun.gan];
-  var favor = (ze === a.yong || ze === a.hee || ze === a.me);
-  var je = ZHI_E[seun.zhi];
-  var note = JIJI_NOTE[je];
-  var tail = favor
-    ? '이 기운은 ' + nick + '에게 힘을 보태는 쪽이라, 올해는 밀어도 되는 자리입니다.'
-    : '다만 이미 넘치는 쪽의 기운이라 과열을 조심해야 합니다. 벌인 일의 수를 줄이고 마무리에 힘을 쓰세요.';
-  return '<div class="read-kicker">올해</div>'
-    + '<h4>' + seun.year + '년, 돈과 일의 흐름</h4>'
-    + '<p>올해 세운은 <b>' + seunName + '</b>입니다. 천간 <b>' + GAN_H[seun.gan] + '</b>의 기운이 ' + nick + '의 일간 <b>' + GAN_H[s.dGan] + '</b>과 만나 <b>' + ss + '</b>이 되었습니다.</p>'
-    + '<p>' + (YEAR_BY_SIPSIN[ss] || '') + '</p>'
-    + '<p>올해 지지 ' + ZHI_H[seun.zhi] + '는 ' + elemLabel(je) + '의 기운 — ' + note + ' ' + tail + '</p>';
+/* ---------- 세운(歲運) · 올해와 내년 ---------- */
+var CUR_YEAR = null;
+var GRADE_LABEL = {da:'대길', gil:'길', mu:'무난', ju:'주의'};
+var Q_BADGE = {good:'길', care:'조심', mid:'무난'};
+
+var YEAR_META = {
+  2026: {
+    han:'丙午', ko:'병오', kw:'드러내고 넓히는 해',
+    ganNote:'丙은 한낮의 태양입니다. 숨기지 않고 비추는 힘이라, 사람 앞에 서는 일이 곧 힘이 되는 해입니다.',
+    zhiNote:'午는 火가 가장 왕한 자리입니다. 판이 환해지는 만큼 과열과 구설도 함께 커집니다.'
+  },
+  2027: {
+    han:'丁未', ko:'정미', kw:'거두어 창고에 넣는 해',
+    ganNote:'丁은 어둠을 밝히는 촛불입니다. 밝기는 좁지만 오래갑니다. 넓게 벌이기보다 한 곳을 정확히 비추는 힘입니다.',
+    zhiNote:'未는 여름의 마른 흙이자 곡식을 담는 창고입니다. 火의 열기가 土로 내려앉아, 벌인 일이 눈에 보이는 결과로 굳는 해입니다. 다만 마른 흙이라 물과 그늘이 없으면 메마르니, 속도를 줄이는 쪽이 이깁니다.'
+  }
+};
+
+/* 2027 정미년 — 천간 丁이 일간과 만나 이루는 십신별 총운 */
+var SIPSIN_2027 = {
+  '비견':'丁火가 내 일간과 같은 자리에 하나 더 서는 해입니다. 내 이름으로 판을 여는 힘이 세지고, 혼자 결정할 일이 늘어납니다. 未土가 그 불을 받아 담아 주니 벌인 것이 남기는 하지만, 같은 자리를 둘이 나눠야 하는 순간이 반드시 옵니다.',
+  '겁재':'丁火가 내 기운과 같은 오행의 반대편으로 들어옵니다. 동업자·경쟁자·형제 같은 사람이 판에 들어오는 해이고, 그만큼 내 몫을 지키는 힘이 시험받습니다. 未가 창고라, 나눠도 남는 구조를 만들어 두면 이깁니다.',
+  '식신':'내가 낳은 것이 丁火가 되어 세상에 나오는 해입니다. 손으로 만든 결과물과 콘텐츠가 사람에게 닿고, 그 반응이 곧 매출이 됩니다. 未가 곡식을 담는 창고라, 만든 것을 담아 두면 겨울에 값이 붙습니다.',
+  '상관':'丁火가 말과 재주로 뻗어 나가는 해입니다. 밝기가 좁은 대신 깊어서, 넓게 알리기보다 한 사람·한 동네·한 제품을 정확히 파고들 때 통합니다. 말이 앞서면 윗사람이나 거래처와 각이 서기 쉬운 해이기도 합니다.',
+  '편재':'丁火가 재성으로 들어오는 해입니다. 촛불 같은 불이라 큰 한 방보다 여러 자리에 작게 붙는 돈이 됩니다. 未土가 그 불을 받아 담으니, 벌어들인 것이 창고에 남는 드문 구조입니다.',
+  '정재':'丁火가 짝을 이룬 재성으로 들어옵니다. 크게 벌리기보다 반복해서 들어오는 돈이 힘을 갖는 해이고, 未의 창고가 이를 받쳐 쌓이는 맛이 있습니다.',
+  '편관':'丁火가 나를 다스리는 관으로 들어옵니다. 압박과 책임이 함께 오지만 그 압박이 실력을 끌어올립니다. 未土가 관을 받쳐 주니, 맡은 자리를 끝까지 지키면 다음 해에 직함이 따라옵니다.',
+  '정관':'丁火가 바른 관으로 들어옵니다. 직함·신용·자격이 값을 만드는 해이고, 공적인 자리에서 인연이 붙습니다. 未의 흙이 관을 든든히 받쳐 주어, 이름을 걸고 하는 일이 오래갑니다.',
+  '편인':'丁火가 나를 낳는 인성으로 들어옵니다. 배움과 정보, 자격이 재물이 되고, 혼자 깊이 파고드는 시간이 값을 만듭니다. 다만 생각이 길어지면 결정이 늦어지는 해이니 기한을 정해 두세요.',
+  '정인':'丁火가 나를 살리는 인성으로 들어옵니다. 후원·지원사업·관공서 인연이 실제 매출이 되고, 문서와 증빙을 챙기는 사람이 이깁니다. 未土까지 함께 와서 뒷받침이 두 겹인 해입니다.'
+};
+
+var SIPSIN_MONEY = {
+  '비견':'내 이름으로 나가는 지출이 늘어나는 자리입니다. 새 장비·간판·계정처럼 남는 자산은 사도 좋지만, 사람과 함께 쓰는 돈은 반드시 문서로 남기세요.',
+  '겁재':'들어오는 돈보다 나가는 돈이 먼저 커집니다. 지인 대여·보증·공동 결제가 가장 큰 구멍이니, 이 세 가지는 하지 않는 쪽이 이깁니다.',
+  '식신':'만든 것이 돈이 되는 자리입니다. 새 상품과 새 서비스를 내놓기에 가장 좋고, 재료와 재고를 미리 확보한 사람이 값을 붙입니다.',
+  '상관':'홍보와 영업에서 성과가 큽니다. 다만 계약서 문장, 약속의 범위, 마감 날짜를 한 번 더 확인하세요. 말로 한 약속이 문서와 다르면 반드시 문제가 됩니다.',
+  '편재':'현장이 넓어지고 새 거래처가 붙습니다. 다만 여러 곳에 동시에 손을 대면 어느 것도 끝나지 않으니, 벌이는 일의 수를 정해 두세요.',
+  '정재':'단가보다 회전, 회전보다 수금입니다. 미수금을 이 해에 정리해 두면 다음 해가 훨씬 가벼워집니다.',
+  '편관':'큰 현장과 큰 계약이 들어옵니다. 규모가 클수록 보증·안전·인허가를 먼저 챙기고, 일정에 여유를 두는 것이 곧 수익입니다.',
+  '정관':'직함과 신용이 값을 만듭니다. 업체 이름으로 나가는 일이 유리하고, 견적서와 시방서를 정확히 쓰는 것이 단가가 됩니다.',
+  '편인':'기술과 자격, 정보가 재물이 됩니다. 새 장비보다 새 기술을 먼저 익히고, 정보를 사는 데 쓰는 돈은 아끼지 마세요.',
+  '정인':'후원과 지원사업, 외부 자금이 붙기 좋습니다. 증빙을 챙기고 마감을 달력에 박아 두세요. 큰 지출은 자금이 확정된 뒤에 하세요.'
+};
+
+var SIPSIN_REL = {
+  '비견':'동업자와 친구가 가까워지고 그만큼 부딪힙니다. 자존심 경쟁이 붙는 자리에서는 한 발 물러서는 쪽이 오래 이깁니다. 잘 버티는 편이지만 무리한 일정이 관절에 남습니다.',
+  '겁재':'가까운 사람과 돈 이야기로 어긋납니다. 정을 이유로 미룬 말을 미리 꺼내 두세요. 술자리와 회식이 늘어 간과 체중이 먼저 신호를 보냅니다.',
+  '식신':'편안하고 부드러운 기운이라 가족 관계가 좋아집니다. 다만 먹는 즐거움이 커져 체중과 허리, 혈당을 먼저 살피세요.',
+  '상관':'직설이 칼이 되는 자리입니다. 말을 보내기 전에 하루 묵혀 두세요. 목과 어깨, 잠이 먼저 상하기 쉬우니 말을 아끼는 것이 곧 건강입니다.',
+  '편재':'사람을 만나는 자리가 돈이 되는 자리입니다. 모임이 늘지만 그 자리에서 한 약속이 다음 해 부담이 되지 않게 하세요. 과음과 야식이 발목을 잡습니다.',
+  '정재':'가정과 생활의 안정이 곧 재물입니다. 배우자와 돈 이야기를 피하지 말고 한 번 앉아 정리하세요. 규칙적인 식사가 이 해의 약입니다.',
+  '편관':'상사와 발주처, 관계가 시험받습니다. 부딪히기보다 기준을 문서로 남기세요. 잠이 부족하면 판단이 흐려지니 수면을 먼저 지키세요.',
+  '정관':'윗사람과 관공서, 협회 인연이 힘이 됩니다. 다만 규칙을 어긴 편법은 그대로 드러나는 자리이니 서류를 깨끗하게 유지하세요. 목과 허리를 펴는 습관이 필요합니다.',
+  '편인':'혼자 있는 시간이 필요해 사람을 줄이게 됩니다. 그렇다고 연락을 끊으면 인연이 끊기니 최소한의 인사는 남기세요. 생각이 많아 잠이 얕아집니다.',
+  '정인':'어른과 스승, 가족의 도움이 큽니다. 고맙다는 말을 아끼지 않으면 그 인연이 다음 해까지 이어집니다. 몸은 대체로 안정되나 소화기가 예민해집니다.'
+};
+
+var SIPSIN_TIP = {
+  '비견':'혼자 밀되 혼자 다 갖지 마세요. 새 일은 하나로 줄이는 것이 이 해의 답입니다.',
+  '겁재':'나눌 것은 미리 나누고, 보증은 끝까지 거절하세요.',
+  '식신':'하나를 만들어 열 번 고치세요. 잘 만든 하나가 열 번의 광고를 이깁니다.',
+  '상관':'잘하는 말로 사람을 얻고, 그 말로 잃지 않도록 문장을 다듬으세요.',
+  '편재':'새 거래처는 세 곳까지만. 넓힌 것은 이 해에 거두세요.',
+  '정재':'새 지출보다 새 계약 하나를 늘리세요. 쌓는 해입니다.',
+  '편관':'결단은 빠르게, 확인은 두 번. 미루면 일이 두 배가 됩니다.',
+  '정관':'대표의 이름으로 나가는 일을 하나 더 만드세요.',
+  '편인':'배운 것을 한 번 꺼내 쓰세요. 쓰지 않은 지식은 값이 되지 않습니다.',
+  '정인':'혼자 벌이지 말고 도움을 받아 버세요. 신청할 것을 지금 적어 두세요.'
+};
+
+function ganOfYear(y){ return ((y - 4) % 10 + 10) % 10; }
+function zhiOfYear(y){ return ((y - 4) % 12 + 12) % 12; }
+
+/* 그 오행이 이 사주에 얼마나 반가운지 — 용신·희신·신강/신약을 함께 본다 */
+function elemWeight(a, e){
+  if (e === a.yong) return 2;
+  if (e === a.hee) return 1.4;
+  var rel = ((e - a.me) + 5) % 5, sc = 0;
+  if (rel === 0) sc = a.kind === '신강' ? -0.4 : (a.kind === '신약' ? 1.0 : 0.3);
+  else if (rel === 1) sc = a.kind === '신강' ? 1.0 : -0.5;
+  else if (rel === 2) sc = a.kind === '신강' ? 1.0 : -0.9;
+  else if (rel === 3) sc = a.kind === '신강' ? 0.9 : -1.0;
+  else sc = a.kind === '신강' ? -0.6 : 1.1;
+  if (a.zeros.indexOf(e) >= 0) sc += 0.3;
+  return sc;
+}
+
+function elemRoleName(a, e){
+  if (e === a.yong) return '용신';
+  if (e === a.hee) return '희신';
+  return ['비겁', '식상', '재성', '관성', '인성'][((e - a.me) + 5) % 5];
+}
+
+function yearGradeOf(a, y){
+  var g = ganOfYear(y), z = zhiOfYear(y);
+  var sc = elemWeight(a, GAN_E[g]) + elemWeight(a, ZHI_E[z]) * 0.85;
+  var grade = sc >= 2.4 ? 'da' : (sc >= 1.1 ? 'gil' : (sc >= -0.2 ? 'mu' : 'ju'));
+  return {gan: g, zhi: z, score: sc, grade: grade, label: GRADE_LABEL[grade]};
+}
+
+function yearMetaOf(y){
+  if (YEAR_META[y]) return YEAR_META[y];
+  var g = ganOfYear(y), z = zhiOfYear(y);
+  return {
+    han: GAN_H[g] + ZHI_H[z], ko: GAN_K[g] + ZHI_K[z],
+    kw: ELEM_K[GAN_E[g]] + '·' + ELEM_K[ZHI_E[z]] + '의 기운이 오는 해',
+    ganNote: GAN_H[g] + '은 ' + ELEM_K[GAN_E[g]] + '의 천간으로, 일간과 만나 이 해의 십신을 이룹니다.',
+    zhiNote: ZHI_H[z] + '는 ' + ELEM_K[ZHI_E[z]] + '의 지지로, 해의 바탕을 놓습니다.'
+  };
+}
+
+function elemSentence(a, e, tag){
+  var role = elemRoleName(a, e);
+  if (role === '용신') return tag + ' — 이 사주가 기다리던 <b>용신</b>입니다. 미뤄 둔 결정을 이 기운이 직접 밀어 줍니다.';
+  if (role === '희신') return tag + ' — 용신을 거드는 <b>희신</b>입니다. 벌이기보다 실행이 잘 붙는 쪽입니다.';
+  if (role === '비겁') return a.kind === '신강'
+    ? tag + ' — 이미 넘치는 <b>비겁</b>이라 더 밀면 과열됩니다. 나눠 주고 비우는 쪽이 이깁니다.'
+    : tag + ' — <b>비겁</b>으로 힘을 보태는 자리입니다. 혼자 버티기보다 손을 잡을 때 커집니다.';
+  if (role === '식상') return a.kind === '신강'
+    ? tag + ' — 넘치는 기운을 밖으로 풀어 주는 <b>식상</b>입니다. 만들고 말하고 파는 일이 곧 개운입니다.'
+    : tag + ' — 기운을 더 흘려보내는 <b>식상</b>입니다. 벌이기보다 아끼고 채우는 쪽이 낫습니다.';
+  if (role === '재성') return a.kind === '신강'
+    ? tag + ' — 넘치는 힘이 돈으로 바뀌는 <b>재성</b>입니다. 벌어도 되는 자리입니다.'
+    : tag + ' — 몸을 더 쓰게 하는 <b>재성</b>입니다. 일은 벌이되 사람을 써서 버티세요.';
+  if (role === '관성') return a.kind === '신강'
+    ? tag + ' — 기운을 다스려 주는 <b>관성</b>입니다. 책임과 직함이 오히려 편안합니다.'
+    : tag + ' — 압박으로 오는 <b>관성</b>입니다. 맡는 일의 수를 줄이세요.';
+  return a.kind === '신약'
+    ? tag + ' — 나를 받쳐 주는 <b>인성</b>입니다. 배우고 기대는 쪽이 이깁니다.'
+    : tag + ' — 이미 넘치는 기운을 더 채우는 <b>인성</b>입니다. 생각이 길어지고 실행이 늦어지니 기한을 정하세요.';
+}
+
+function quartersOf(y, a){
+  var mp = monthPillarsOf(y);
+  var CAL = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
+  var defs = [
+    {q: '1분기', zhi: '인·묘·진', span: '2–4월'},
+    {q: '2분기', zhi: '사·오·미', span: '5–7월'},
+    {q: '3분기', zhi: '신·유·술', span: '8–10월'},
+    {q: '4분기', zhi: '해·자·축', span: '11–1월'}
+  ];
+  var out = [];
+  for (var i = 0; i < 4; i++) {
+    var ms = [], good = 0, care = 0;
+    for (var k = 0; k < 3; k++) {
+      var idx = i * 3 + k, m = mp[idx], r = rateMonth(a, m);
+      if (r === 'good') good++;
+      if (r === 'care') care++;
+      ms.push({mo: CAL[idx], gan: m.gan, zhi: m.zhi, r: r});
+    }
+    var grade = (care === 0 && good >= 2) ? 'good' : (care >= 2 ? 'care' : 'mid');
+    var best = null, worst = null;
+    for (var j = 0; j < 3; j++) {
+      if (best === null && ms[j].r === 'good') best = ms[j];
+      if (worst === null && ms[j].r === 'care') worst = ms[j];
+    }
+    out.push({q: defs[i].q, zhi: defs[i].zhi, span: defs[i].span, months: ms, grade: grade, best: best, worst: worst});
+  }
+  return out;
+}
+
+function monthLabel(m){ return m.mo + '월 ' + GAN_H[m.gan] + ZHI_H[m.zhi] + '월'; }
+
+function quarterLine(Q){
+  var b = Q.best ? monthLabel(Q.best) : '';
+  var w = Q.worst ? monthLabel(Q.worst) : '';
+  if (Q.grade === 'good') return b ? b + '에 문이 열립니다. 견적과 계약, 제안은 이 달에 몰아 두세요.' : '세 달이 고르게 좋습니다. 미뤄 둔 일을 이 분기에 끝내세요.';
+  if (Q.grade === 'care') return (w ? w + '은 ' : '') + '확장보다 수금과 정비의 시기입니다. 큰 지출과 새 계약은 다음 분기로 미루세요.';
+  if (b && w) return b + '이 그나마 트이고, ' + w + '은 무리하지 마세요.';
+  if (b) return b + '이 그나마 트이는 달입니다. 나머지 두 달은 루틴을 지키면 흐름이 유지됩니다.';
+  if (w) return w + '만 조심하면 나머지 두 달은 무난합니다.';
+  return '세 달이 고르게 무난합니다. 루틴을 지키면 흐름이 유지됩니다.';
+}
+
+function yearPaneHTML(s, a, nick, y){
+  var meta = yearMetaOf(y), gy = yearGradeOf(a, y);
+  var ss = sipsinOf(s.dGan, gy.gan);
+  var gE = GAN_E[gy.gan], zE = ZHI_E[gy.zhi];
+  var all = (y === 2027 && SIPSIN_2027[ss]) ? SIPSIN_2027[ss] : (YEAR_BY_SIPSIN[ss] || '');
+  var money = SIPSIN_MONEY[ss] || '';
+  var rel = SIPSIN_REL[ss] || '';
+  var tip = SIPSIN_TIP[ss] || '';
+  var zhiNote = JIJI_NOTE[zE] || '';
+
+  var ip = null, nIp = null;
+  var list = termsOfYear(y), nlist = termsOfYear(y + 1);
+  for (var i = 0; i < list.length; i++) if (list[i].idx === 1) ip = list[i];
+  for (var k = 0; k < nlist.length; k++) if (nlist[k].idx === 1) nIp = nlist[k];
+  var startText = ip ? y + '.02.' + pad2(ip.d) : y + '.02.04';
+  var endText;
+  if (nIp) {
+    var eDate = new Date(Date.UTC(y + 1, nIp.mo - 1, nIp.d));
+    eDate.setUTCDate(eDate.getUTCDate() - 1);
+    endText = eDate.getUTCFullYear() + '.' + pad2(eDate.getUTCMonth() + 1) + '.' + pad2(eDate.getUTCDate());
+  } else {
+    endText = (y + 1) + '.02.03';
+  }
+
+  var healthTone = a.kind === '신약'
+    ? '체력이 먼저 지치는 자리이니, 일정 사이에 회복 시간을 먼저 넣으세요. 사람을 쓰는 것이 이 해의 건강법입니다.'
+    : (gy.grade === 'ju'
+      ? '압박이 큰 해라 잠과 식사가 먼저 무너집니다. 수면 시간을 일정보다 앞에 두세요.'
+      : '몸은 대체로 무난합니다. 규칙적인 식사와 가벼운 산책이 이 해의 약입니다.');
+
+  var elemParas;
+  if (gE === zE) {
+    elemParas = '<p>' + elemSentence(a, gE, '천간 <b>' + GAN_H[gy.gan] + '</b>과 지지 <b>' + ZHI_H[gy.zhi] + '</b>, 둘 다 ' + ELEM_H[gE] + '(' + ELEM_K[gE] + ')') + '</p>';
+  } else {
+    elemParas = '<p>' + elemSentence(a, gE, '천간 <b>' + GAN_H[gy.gan] + '</b>(' + ELEM_H[gE] + ')') + '</p>'
+      + '<p>' + elemSentence(a, zE, '지지 <b>' + ZHI_H[gy.zhi] + '</b>(' + ELEM_H[zE] + ')') + '</p>';
+  }
+
+  var moneyTone = (gy.grade === 'da' || gy.grade === 'gil')
+    ? '이 해는 재물을 밀어도 되는 자리입니다. 견적과 단가를 스스로 정하는 쪽으로 움직이세요.'
+    : (gy.grade === 'ju'
+      ? '이 해는 벌이보다 지키는 쪽이 남습니다. 새 지출은 한 박자 늦추고, 들어올 돈부터 확실히 하세요.'
+      : '재물의 흐름은 무난합니다. 크게 벌리지 않으면 새지도 않습니다.');
+
+  var qs = quartersOf(y, a), qhtml = '';
+  for (var q = 0; q < qs.length; q++) {
+    var Q = qs[q];
+    var mchips = '';
+    for (var m = 0; m < 3; m++) {
+      mchips += '<span class="q-m ' + Q.months[m].r + '">' + Q.months[m].mo + '월 ' + GAN_H[Q.months[m].gan] + ZHI_H[Q.months[m].zhi] + '</span>';
+    }
+    qhtml += '<div class="q-cell ' + Q.grade + '">'
+      + '<div class="q-top"><span class="q-name">' + Q.q + '</span><span class="q-badge g-' + Q.grade + '">' + Q_BADGE[Q.grade] + '</span></div>'
+      + '<div class="q-span">' + Q.zhi + '월 · ' + Q.span + '</div>'
+      + '<div class="q-months">' + mchips + '</div>'
+      + '<div class="q-line">' + quarterLine(Q) + '</div>'
+      + '</div>';
+  }
+
+  return '<div class="yp-head">'
+    + '<div class="yp-ywrap"><span class="yp-year">' + y + '</span><span class="yp-gz">' + meta.han + ' ' + meta.ko + '년</span></div>'
+    + '<span class="yp-grade g-' + gy.grade + '">' + gy.label + '</span>'
+    + '</div>'
+    + '<div class="yp-term">' + startText + ' 입춘 ~ ' + endText + '까지 · 세운 ' + GAN_H[gy.gan] + ZHI_H[gy.zhi] + ' = 일간 <b>' + GAN_H[s.dGan] + '</b>에 <b>' + ss + '</b></div>'
+    + '<div class="yp-kw">' + meta.kw + '</div>'
+    + '<div class="yp-sec"><div class="yp-h">총운</div>'
+    + '<p>' + meta.ganNote + ' ' + meta.zhiNote + '</p>'
+    + '<p>' + all + '</p>'
+    + elemParas
+    + '<p>지지 ' + ZHI_H[gy.zhi] + '의 결 — ' + zhiNote + '</p>'
+    + '</div>'
+    + '<div class="yp-sec"><div class="yp-h">재물 · 사업운</div>'
+    + '<p>' + money + '</p>'
+    + '<p>' + moneyTone + '</p>'
+    + '</div>'
+    + '<div class="yp-sec"><div class="yp-h">인간관계 · 건강운</div>'
+    + '<p>' + rel + '</p>'
+    + '<p>' + healthTone + '</p>'
+    + '</div>'
+    + '<div class="yp-tip"><span>핵심 조언</span>' + tip + '</div>'
+    + '<div class="yp-sec"><div class="yp-h">분기별 흐름 · ' + y + '</div><div class="q-grid">' + qhtml + '</div>'
+    + '<p style="margin-top:9px;font-size:11px;color:var(--muted-2)">분기는 인·묘·진 / 사·오·미 / 신·유·술 / 해·자·축의 열두 달건을 넷으로 나눈 것입니다. 달마다의 간지와 내 용신·희신을 대조해 계산했습니다.</p>'
+    + '</div>';
+}
+
+function blockYears(s, a, nick){
+  if (!CUR_YEAR) CUR_YEAR = currentSeun().year;
+  var ys = [CUR_YEAR, CUR_YEAR + 1];
+  if (state.yearTab !== ys[0] && state.yearTab !== ys[1]) state.yearTab = ys[1];
+  var tabs = '';
+  for (var i = 0; i < 2; i++) {
+    var y = ys[i], meta = yearMetaOf(y), gy = yearGradeOf(a, y);
+    tabs += '<button type="button" class="ytab' + (state.yearTab === y ? ' on' : '') + '" data-year="' + y + '">'
+      + '<span class="yt-y">' + y + '</span>'
+      + '<span class="yt-h">' + meta.han + ' ' + meta.ko + '년</span>'
+      + '<span class="yt-k">' + meta.kw + '</span>'
+      + '<span class="yt-g g-' + gy.grade + '">' + gy.label + '</span>'
+      + (i === 1 ? '<span class="yt-new">내년</span>' : '')
+      + '</button>';
+  }
+  return '<div class="read-kicker">세운 · 歲運</div>'
+    + '<h4>올해와 내년, 두 해의 자리</h4>'
+    + '<p>' + nick + '의 일간 <b>' + GAN_H[s.dGan] + '</b>에 ' + ys[0] + '년과 ' + ys[1] + '년의 천간이 만나 <b>십신</b>이 갈립니다. 두 해를 눌러 바꿔 보며 어디서 밀고 어디서 거둘지 확인해 보세요.</p>'
+    + '<div class="year-box" id="yearBox">'
+    + '<div class="year-tabs" id="yearTabs">' + tabs + '</div>'
+    + '<div id="yearPane" class="year-pane">' + yearPaneHTML(s, a, nick, state.yearTab) + '</div>'
+    + '</div>';
+}
+
+function setYearTab(y, scroll){
+  if (!state.saju || !state.analysis) return;
+  state.yearTab = y;
+  var tabs = el('yearTabs');
+  if (tabs) {
+    var btns = tabs.querySelectorAll('.ytab');
+    for (var i = 0; i < btns.length; i++) btns[i].classList.toggle('on', parseInt(btns[i].getAttribute('data-year'), 10) === y);
+  }
+  var pane = el('yearPane');
+  if (pane) {
+    var nick = state.saju.name ? esc(state.saju.name) + '님' : '당신';
+    pane.innerHTML = yearPaneHTML(state.saju, state.analysis, nick, y);
+    pane.classList.remove('fade-in');
+    void pane.offsetWidth;
+    pane.classList.add('fade-in');
+  }
+  if (scroll) {
+    var box = el('yearBox');
+    if (box) box.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+}
+
+function bindYearTabs(){
+  var tabs = el('yearTabs');
+  if (tabs) tabs.addEventListener('click', function(ev){
+    var b = ev.target.closest ? ev.target.closest('.ytab') : null;
+    if (!b) return;
+    setYearTab(parseInt(b.getAttribute('data-year'), 10), false);
+  });
+  var go = el('nyGo');
+  if (go) go.addEventListener('click', function(){
+    if (!CUR_YEAR) CUR_YEAR = currentSeun().year;
+    setYearTab(CUR_YEAR + 1, false);
+    var box = el('yearBox');
+    if (box) box.scrollIntoView({behavior: 'smooth', block: 'start'});
+  });
+}
+
+function nyBandHTML(s, a){
+  if (!CUR_YEAR) CUR_YEAR = currentSeun().year;
+  var y = CUR_YEAR + 1, meta = yearMetaOf(y), gy = yearGradeOf(a, y);
+  var ss = sipsinOf(s.dGan, gy.gan);
+  return '<div class="ny-band">'
+    + '<div class="ny-band-txt">'
+    + '<span class="ny-band-k">' + y + ' ' + meta.han + ' · 신년운세 · ' + gy.label + ' · ' + ss + '</span>'
+    + '<strong>' + meta.ko + '년, ' + meta.kw + '</strong>'
+    + '<span class="ny-band-s">' + CUR_YEAR + '년과 나란히 · 분기별 흐름까지</span>'
+    + '</div>'
+    + '<button type="button" class="ny-band-btn" id="nyGo">바로 보기</button>'
+    + '</div>';
 }
 
 function blockYongsin(s, a, nick){
@@ -1711,6 +2102,19 @@ function init(){
   initTarot();
   renderProducts();
   bindProducts();
+  var nn = el('navNew');
+  if (nn) nn.addEventListener('click', function(ev){
+    if (state.saju && state.analysis) {
+      ev.preventDefault();
+      el('result').classList.remove('hidden');
+      if (!CUR_YEAR) CUR_YEAR = currentSeun().year;
+      setYearTab(CUR_YEAR + 1, false);
+      var box = el('yearBox');
+      if (box) box.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } else {
+      toast('명식을 풀면 내년 신년운세가 열립니다');
+    }
+  });
   el('modal').addEventListener('click', function(ev){
     if (ev.target.closest && ev.target.closest('[data-close]')) closeModal();
   });
